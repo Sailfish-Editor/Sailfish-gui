@@ -36,7 +36,7 @@ const base = {
         host: '0.0.0.0',
         disableHostCheck: true,
         compress: true,
-        port: process.env.PORT || 8601,
+        port: process.env.PORT || 3000,
         // allows ROUTING_STYLE=wildcard to work properly
         historyApiFallback: {
             rewrites: [
@@ -85,6 +85,12 @@ const base = {
                     }]],
                 presets: ['@babel/preset-env', '@babel/preset-react']
             }
+        },
+        {
+            test: /\.cjs$/,
+            use: 'file-loader',
+            include: [path.resolve(__dirname, 'src/generated')],
+            type: 'javascript/auto'
         },
         {
             test: /\.css$/,
@@ -239,6 +245,14 @@ module.exports = [
                         from: 'extensions/**',
                         to: 'static',
                         context: 'src/examples'
+                    }
+                ]
+            }),
+            new CopyWebpackPlugin({
+                patterns: [
+                    {
+                        from: 'src/generated/**',
+                        to: 'src/generated'
                     }
                 ]
             })

@@ -7,7 +7,8 @@ import keyMirror from 'keymirror';
 
 import log from './log.js';
 
-import hexUrl from '../generated/microbit-hex-url.cjs';
+// Direct URL for microbit hex file
+const hexUrl = './static/microbit/scratch-microbit-1.2.0.hex';
 
 /**
  * @typedef {import('@microbit/microbit-universal-hex').IndividualHex} IndividualHex
