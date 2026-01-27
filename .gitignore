@@ -35,7 +35,6 @@ dev.log
 # Icons and archives
 icons/
 *.7z
-*.zip
 
 # Project notes
 PROJECT-NOTES.md
