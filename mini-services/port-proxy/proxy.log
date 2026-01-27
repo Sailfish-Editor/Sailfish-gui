@@ -1,4 +1,0 @@
-$ bun --hot index.js
-代理服务器运行在端口 3000，转发请求到 localhost:8601
-代理错误: ECONNREFUSED
-代理错误: ECONNREFUSED
