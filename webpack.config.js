@@ -194,7 +194,7 @@ module.exports = [
                 filename: 'editor.html',
                 title: `${APP_NAME} - Run Scratch projects faster`,
                 isEditor: true,
-                favicon: './static/favicon.ico',
+                favicon: 'static/favicon.ico',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
@@ -202,7 +202,7 @@ module.exports = [
                 template: 'src/playground/index.ejs',
                 filename: 'index.html',
                 title: `${APP_NAME} - Run Scratch projects faster`,
-                favicon: './static/favicon.ico',
+                favicon: 'static/favicon.ico',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
@@ -210,7 +210,7 @@ module.exports = [
                 template: 'src/playground/index.ejs',
                 filename: 'fullscreen.html',
                 title: `${APP_NAME} - Run Scratch projects faster`,
-                favicon: './static/favicon.ico',
+                favicon: 'static/favicon.ico',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
@@ -218,7 +218,7 @@ module.exports = [
                 template: 'src/playground/embed.ejs',
                 filename: 'embed.html',
                 title: `Embedded Project - ${APP_NAME}`,
-                favicon: './static/favicon.ico',
+                favicon: 'static/favicon.ico',
                 ...htmlWebpackPluginCommon
             }),
             new HtmlWebpackPlugin({
