@@ -1,0 +1,8 @@
+{
+  "name": "port-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --hot index.js"
+  }
+}
