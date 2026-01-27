@@ -34,6 +34,10 @@ dev.log
 
 # Archives
 *.7z
+*.zip
+
+# Temporary icons folder (source of static/icons)
+icons/
 
 # Project notes
 PROJECT-NOTES.md
