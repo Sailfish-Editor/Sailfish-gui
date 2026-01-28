@@ -32,12 +32,15 @@
     background-image: $menu-bar-background-image;
     color: $menu-bar-foreground;
 
+    /* Apple HIG: Backdrop blur effect */
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
 
+    /* Apple HIG: Subtle shadow for depth */
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04),
                 0 1px 3px rgba(0, 0, 0, 0.04);
 
+    /* Smooth transitions */
     transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -73,6 +76,7 @@
     height: $menu-bar-height;
     border-radius: $form-radius;
 
+    /* Apple HIG: Smooth transitions */
     transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -80,11 +84,13 @@
     cursor: pointer;
 }
 
+/* Apple HIG: More pronounced hover state with smooth transition */
 .menu-bar-item.hoverable:hover {
     background-color: rgba(0, 0, 0, 0.06);
     transform: scale(1.02);
 }
 
+/* Apple HIG: Active state */
 .menu-bar-item.active,
 .menu-bar-item.hoverable:active {
     background-color: rgba(0, 0, 0, 0.12);
@@ -139,6 +145,7 @@
     border-radius: $form-radius;
     border: 1px solid rgba(0, 0, 0, 0.1);
 
+    /* Apple HIG: Smooth transitions and subtle shadow */
     transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
