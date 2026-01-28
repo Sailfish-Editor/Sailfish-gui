@@ -97,3 +97,15 @@
     min-width: auto;
     min-height: auto;
 }
+
+.blocks :global(.blocklyDraggable .blocklySvg):not(.blocklyDragging):not([disabled]) {
+    transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.blocks :global(.blocklyDraggable:hover .blocklySvg):not(.blocklyDragging):not([disabled]) {
+    transform: translateX(8px);
+}
+
+.blocks :global(.blocklyDragging .blocklySvg) {
+    transform: none !important;
+}

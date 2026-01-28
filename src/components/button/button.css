@@ -12,7 +12,6 @@
     user-select: none;
     border: 1px solid transparent;
 
-    /* Apple HIG: Smooth transitions */
     transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
