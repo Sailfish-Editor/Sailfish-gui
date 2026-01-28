@@ -1,8 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 import ReactModal from 'react-modal';
 import {FormattedMessage} from 'react-intl';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import Box from '../box/box.jsx';
 import Button from '../button/button.jsx';
@@ -22,6 +22,7 @@ const ModalComponent = props => (
         contentLabel={props.contentLabel}
         overlayClassName={styles.modalOverlay}
         onRequestClose={props.onRequestClose}
+        closeTimeoutMS={250}
     >
         <Box
             dir={props.isRtl ? 'rtl' : 'ltr'}
