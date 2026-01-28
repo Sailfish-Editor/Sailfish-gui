@@ -78,7 +78,7 @@ $sides: 20rem;
 .header-item {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 1.125rem;
     text-decoration: none;
     user-select: none;
 }

@@ -16,7 +16,7 @@ $stage-standard-border-width: 0.0625rem;
 $stage-full-screen-border-width: 0.0625rem;
 $stage-full-screen-stage-padding: 0.1875rem;
 
-$form-radius: calc($space / 2);
+$form-radius: 0.5rem;
 
 /* layout contants from `layout-constants.js` */
 $full-size: 1095px;
@@ -24,6 +24,6 @@ $full-size-paint: 1249px;
 
 $menu-bar-standard-font-size: 0.75rem;
 $menu-bar-large-font-size: 0.875rem;
-$menu-bar-button-size: 2rem;
+$menu-bar-button-size: 1.8rem;
 
 $menu-bar-item-max-width: 12rem;

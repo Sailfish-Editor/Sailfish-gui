@@ -7,9 +7,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: .75rem;
-    padding-right: .75rem;
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
     user-select: none;
+    border: 1px solid transparent;
+
+    /* Apple HIG: Smooth transitions */
+    transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.outlined-button:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
+}
+
+.outlined-button:active {
+    border-color: rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
 }
 
 .icon {
