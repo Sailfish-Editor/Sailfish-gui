@@ -1,0 +1,30 @@
+[class^="backpack_backpack-list"] {
+    height: calc(var(--expandedBackpack-rows) * 5.5rem);
+}
+
+[class*="backpack_backpack-list-inner"] {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: auto;
+    max-height: 100%;
+}
+
+[class*="backpack_backpack-item"] {
+    margin: 0.25rem;
+}
+
+[class^="backpack_backpack-list-inner"]
+    > .react-contextmenu-wrapper
+    > [class^="sprite-selector-item_sprite-image-outer"]
+    > [class^="sprite-selector-item_sprite-image-inner"] {
+    background-color: var(--expandedBackpack-bgcolor);
+}
+
+[class^="backpack_backpack-list-inner"]
+    > .react-contextmenu-wrapper
+    > [class^="sprite-selector-item_sprite-image-outer"]
+    > [class^="sprite-selector-item_sprite-image-inner"]
+    > [class^="sprite-selector-item_sprite-image"] {
+    max-width: var(--expandedBackpack-imgsize);
+    max-height: var(--expandedBackpack-imgsize);
+}

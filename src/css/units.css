@@ -1,0 +1,44 @@
+/* Spacing */
+$space: 0.5rem;
+
+$sprites-per-row: 5;
+
+/* Layout Heights */
+$menu-bar-height: 3rem;
+$sprite-info-height: 6rem;
+$stage-menu-height: 2.75rem;
+
+$library-header-height: 3.125rem;
+$library-filter-bar-height: 2.5rem;
+
+/* Stage Dimensions */
+$stage-standard-border-width: 0.0625rem;
+$stage-full-screen-border-width: 0.0625rem;
+$stage-full-screen-stage-padding: 0.1875rem;
+
+/* Border Radius */
+$form-radius: 0.75rem;
+$card-radius: 1rem;
+$modal-radius: 1.25rem;
+
+/* Breakpoints */
+$full-size: 1095px;
+$full-size-paint: 1249px;
+
+/* Menu Bar */
+$menu-bar-standard-font-size: 0.75rem;
+$menu-bar-large-font-size: 0.875rem;
+$menu-bar-button-size: 2rem;
+
+$menu-bar-item-max-width: 12rem;
+
+/* Transitions */
+$transition-fast: 150ms ease;
+$transition-normal: 250ms ease;
+$transition-slow: 350ms ease;
+
+/* Shadows */
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+$shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);

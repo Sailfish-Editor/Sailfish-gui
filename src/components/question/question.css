@@ -1,0 +1,76 @@
+@import "../../css/units.css";
+@import "../../css/colors.css";
+@import "../../css/default-colors.css";
+
+.question-container {
+    margin: $space;
+    border: 1px solid $ui-black-transparent-default;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.question-label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: $text-primary-default;
+    padding-bottom: $space;
+}
+
+.question-input {
+    display: flex;
+    position: relative;
+}
+
+.question-submit-button {
+    position: absolute;
+    top: calc($space / 2);
+    width: calc(2rem - $space);
+    height: calc(2rem - $space);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    background: $looks-secondary;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.question-submit-button:hover {
+    transform: scale(1.05);
+}
+
+[dir="ltr"] .question-submit-button {
+    right: calc($space / 2);
+}
+
+[dir="rtl"] .question-submit-button {
+    left: calc($space / 2);
+}
+
+.question-input > input {
+    width: 100%;
+    font-weight: 400;
+    background-color: $input-background-default;
+    color: $text-primary-default;
+    border-color: $ui-black-transparent-default;
+}
+
+[dir="ltr"] .question-input > input {
+    padding: 0 2rem 0 0.75rem;
+}
+
+[dir="rtl"] .question-input > input {
+    padding: 0 0.75rem 0 2rem;
+}
+
+.question-input > input:focus {
+    box-shadow: 0 0 0 3px $looks-transparent;
+}
+
+.question-submit-button-icon {
+    width: calc(2rem - $space);
+    height: calc(2rem - $space);
+    position: relative;
+    right: -7px;
+    left: -7px;
+}

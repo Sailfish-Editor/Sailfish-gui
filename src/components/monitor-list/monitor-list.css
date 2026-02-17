@@ -1,0 +1,11 @@
+.monitor-list {
+    margin: auto;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.monitor-list-scaler {
+    transform-origin: left top;
+}
+
+::-ms-clear { display: none; }

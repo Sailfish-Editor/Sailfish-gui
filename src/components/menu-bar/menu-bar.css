@@ -1,0 +1,264 @@
+@import "../../css/colors.css";
+@import "../../css/units.css";
+@import "../../css/z-index.css";
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    height: $menu-bar-height;
+    font-size: $menu-bar-standard-font-size;
+    font-weight: 500;
+    background-color: $menu-bar-background;
+    background-image: $menu-bar-background-image;
+    color: $menu-bar-foreground;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+.inactive {
+    opacity: 0;
+}
+
+.scratch-logo {
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+.scratch-logo.clickable {
+    cursor: pointer;
+}
+
+.menu-bar-item {
+    display: flex;
+    text-decoration: none;
+    user-select: none;
+    align-self: center;
+    position: relative;
+    align-items: center;
+    white-space: nowrap;
+    height: $menu-bar-height;
+    border-radius: 0.5rem;
+    transition: background-color 0.05s ease;
+}
+
+.menu-bar-item.hoverable {
+    cursor: pointer;
+}
+
+.menu-bar-item.hoverable:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.menu-bar-item.active,
+.menu-bar-item.hoverable:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-bar-item.growable {
+    max-width: $menu-bar-item-max-width;
+    flex: 1;
+}
+
+.title-field-growable {
+    flex-grow: 1;
+    width: 2rem;
+}
+
+.file-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0 0.25rem;
+    margin: 0 0.125rem;
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 0.5rem;
+}
+
+.file-group .menu-bar-item {
+    padding: 0 0.5rem;
+    transition: background-color 0.05s ease;
+}
+
+.file-group .menu-bar-item:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 0.375rem;
+}
+
+.menu-bar-menu {
+    margin-top: $menu-bar-height;
+    z-index: $z-index-menu-bar;
+}
+
+.feedback-link {
+    color: $menu-bar-background;
+    text-decoration: none;
+}
+
+.feedback-button {
+    background-color: white;
+    color: inherit;
+    height: 34px;
+}
+
+.divider {
+    height: 34px;
+}
+
+.author-info {
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.menu-bar-button {
+    height: $menu-bar-button-size;
+    border-radius: 0.5rem;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-bar-button:hover {
+    transform: scale(1.05);
+}
+
+.menu-bar-button:active {
+    transform: scale(0.95);
+}
+
+.remix-button {
+    background-color: $pen-primary;
+}
+
+.remix-button-icon {
+    height: 1.25rem;
+}
+
+.coming-soon > :not(.coming-soon-tooltip) {
+    opacity: 0.5;
+}
+
+.account-info-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.account-info-group .menu-bar-item {
+    margin: 0 0.25rem;
+    padding: 0 0.75rem;
+    transition: background-color 0.05s ease;
+}
+
+.account-info-group .menu-bar-item:hover {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.account-info-group .menu-bar-item:active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mystuff-icon {
+    margin: 0 0.25rem;
+    height: 1rem;
+}
+
+.help-icon {
+    margin: 0 0.25rem 0 0;
+}
+
+[dir="rtl"] .help-icon {
+    margin: 0 0 0 0.25rem;
+}
+
+.account-nav-menu,
+.mystuff-button {
+    padding: 0 0.25rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile-icon {
+    margin: 0 0.25rem;
+    width: $menu-bar-button-size;
+    border-radius: 0.5rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.profile-icon:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown-caret-icon {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+[dir="ltr"] .dropdown-caret-icon {
+    margin-left: 0.5rem;
+}
+
+[dir="rtl"] .dropdown-caret-icon {
+    margin-right: 0.5rem;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.mystuff > a {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45%;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    width: 1.875rem;
+    overflow: hidden;
+    text-indent: 3.125rem;
+    white-space: nowrap;
+}
+
+.mystuff > a:hover {
+    background-size: 50%;
+}
+
+.about-icon {
+    height: 1.25rem;
+    margin: 0.5rem;
+    vertical-align: middle;
+}
+
+.collapsible-label {
+    margin: 0 0.25rem;
+}
+
+@media only screen and (max-width: 1124px) {
+    .tutorials-label,
+    .collapsible-label {
+        display: none;
+    }
+
+    .help-icon {
+        margin-right: 0;
+    }
+}
+
+.menu-item-link {
+    color: inherit;
+    text-decoration: none;
+}

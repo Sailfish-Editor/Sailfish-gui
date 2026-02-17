@@ -1,0 +1,36 @@
+@import "../../css/colors.css";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: $looks-secondary;
+    border-radius: 0.5rem;
+    padding: 0.25rem;
+    transition: background-color 0.05s ease;
+}
+
+.container + .container {
+    margin-top: 1rem;
+}
+
+.title {
+    margin-top: 0.375rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.container:active {
+    background-color: $looks-light-transparent;
+}
