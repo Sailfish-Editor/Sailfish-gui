@@ -131,3 +131,64 @@ a {
     border-color: #ff52526e;
     background-color: #ff525240;
 }
+
+/* Download Buttons */
+.downloadButtons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-size: 1rem;
+}
+
+.primaryButton {
+    background-color: #4caf50;
+    color: white;
+    border: 2px solid #4caf50;
+}
+
+.primaryButton:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+.secondaryButton {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.secondaryButton:hover {
+    background-color: #f5f5f5;
+}
+
+/* Dark theme support */
+[data-theme="dark"] .primaryButton {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+
+[data-theme="dark"] .primaryButton:hover {
+    background-color: #81c784;
+    border-color: #81c784;
+}
+
+[data-theme="dark"] .secondaryButton {
+    color: #fff;
+    border-color: #fff;
+}
+
+[data-theme="dark"] .secondaryButton:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
